@@ -1,13 +1,25 @@
 {
   "name": "city-state-country",
   "version": "1.0.0",
-  "description": "",
+  "description": "Get cities, states, countries across the world.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Swapnil Nakhate",
   "license": "ISC",
+  "keywords": [
+    "city",
+    "state",
+    "country",
+    "city state country json database",
+    "GeoLocation",
+    "Autocomplete"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SwapnilNakhate/Cities-States-Country"
+  },
   "dependencies": {
     "alasql": "^0.5.1"
   }
