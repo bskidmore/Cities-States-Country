@@ -1,6 +1,6 @@
 {
   "name": "city-state-country",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get cities, states, countries across the world.",
   "main": "index.js",
   "scripts": {
