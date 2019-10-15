@@ -9,10 +9,10 @@
   "author": "Swapnil Nakhate",
   "license": "ISC",
   "keywords": [
-    "city",
-    "state",
-    "country",
-    "city state country json database",
+    "cities-list",
+    "states-list",
+    "countries-list",
+    "country-state-city-database",
     "GeoLocation",
     "Autocomplete"
   ],
