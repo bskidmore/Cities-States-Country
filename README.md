@@ -19,6 +19,10 @@ Install the package with
       
      const countriesList = worldMapData.getAllCountries();
 
+**Search Country**
+      
+     const countriesList = worldMapData.searchCountry('In');
+
 **Get list of all States from a Country**
       
      const statesList = worldMapData.getAllStatesFromCountry('India');
@@ -32,6 +36,10 @@ Install the package with
      const statesList = worldMapData.searchState('Maha');
      
 It will return all states from world which starts with 'Maha'.
+
+**Get list of all Cities from a State**
+      
+     const citiesList = worldMapData.getAllCitiesFromState('Maharashtra');
 
 **Search City details**
       
