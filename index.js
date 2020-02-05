@@ -13,11 +13,11 @@ module.exports = {
         	return states;
     	},
 
-	getAllStatesFromCountry: function(countryName) {
-		let stateCountryJoinQuery = 'SELECT state.* FROM ? as state WHERE state.country_id=(VALUE OF SELECT * FROM ? AS country WHERE country.name="'+countryName+'")';
-		let stateCountryJoinList = alasql(stateCountryJoinQuery, [cityList, states]);
-		return stateCountryJoinList;
-		},
+	// getAllStatesFromCountry: function(countryName) {
+	// 	let stateCountryJoinQuery = 'SELECT state.* FROM ? as state WHERE state.country_id=(VALUE OF SELECT * FROM ? AS country WHERE country.name="'+countryName+'")';
+	// 	let stateCountryJoinList = alasql(stateCountryJoinQuery, [states, countries]);
+	// 	return stateCountryJoinList;
+	// 	},
 		
 	searchCity: function(searchTextCity) {
 		let searchCityQuery = 'SELECT * FROM ? as city WHERE name LIKE "'+searchTextCity+'%"';
@@ -37,6 +37,14 @@ module.exports = {
 		return cityStateJoinList;
     	},
 
+	getAllStatesFromCountry: function(countryName) {
+		countryIdQuery = "VALUE OF SELECT * FROM ? AS state WHERE state.name='"+countryName+"'";
+		let countryId = alasql(countryIdQuery, [countries]);
+		let stateCountryJoinQuery = 'SELECT state.* FROM ? as state WHERE state.country_id="'+countryId+'"';
+		let stateCountryJoinList = alasql(stateCountryJoinQuery, [states]);
+		return stateCountryJoinList;
+		},
+		
 	searchState: function(searchTextState) {
 		let searchStateQuery = 'SELECT * FROM ? as state WHERE name LIKE "'+searchTextState+'%"';
 		let statesList = alasql(searchStateQuery, [states]);
