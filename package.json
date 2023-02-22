@@ -1,5 +1,5 @@
 {
-  "name": "city-state-country",
+  "name": "@bskid99/city-state-country",
   "version": "1.1.0",
   "description": "Get cities, states, countries across the world.",
   "main": "index.js",
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/SwapnilNakhate10/Cities-States-Country"
+    "url": "https://github.com/bskidmore/Cities-States-Country"
   },
   "dependencies": {
     "alasql": "^0.5.1"
