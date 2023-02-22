@@ -5,7 +5,7 @@ Get all Cities, State, Country all over the world.
 
 Install the package with
 
-      npm i city-state-country --save
+      npm i @bskid99/city-state-country --save
       
 **Usage**
 
